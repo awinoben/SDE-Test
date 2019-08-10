@@ -1,0 +1,2 @@
+ SELECT CarMaker,CarModel, SUM(SalePriceInDollar) AS TotalSalePrice FROM CarSales
+WHERE SaleDate BETWEEN DATE_SUB(NOW(), INTERVAL 30 DAY) AND NOW();
